@@ -10,12 +10,12 @@ services:
       - db-volume:/var/lib/postgresql/data
 
   api:
-    image: andprof/ac2_ca
+    image: lucastoll/ac2_ca
     environment:
       SPRING_PROFILES_ACTIVE: staging
       DB_HOST: database
     ports:
-      - "8484:8484"
+      - "8585:8585"
     depends_on:
       - database
 
