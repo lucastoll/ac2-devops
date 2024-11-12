@@ -22,7 +22,6 @@ pipeline {
     stage('Start container') {
       steps {
         sh 'docker-compose -f docker-compose.prod.yml up -d --no-color --wait'
-        sh 'docker compose ps'
       }
     }
     stage('Run tests against the container') {
