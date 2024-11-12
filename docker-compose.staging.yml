@@ -10,7 +10,7 @@ services:
       - db-volume:/var/lib/postgresql/data
 
   api:
-    image: lucastoll/ac2_ca
+    image: username2478/ac2_ca
     environment:
       SPRING_PROFILES_ACTIVE: staging
       DB_HOST: database
