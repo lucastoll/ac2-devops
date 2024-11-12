@@ -1,15 +1,17 @@
 pipeline {
   agent any
+  environment {
+    PATH = "${env.PATH}:/usr/local/bin"  // Adiciona /usr/local/bin ao PATH
+  }
   stages {
     stage("verify tooling") {
       steps {
         sh '''
-          export PATH=$PATH:/usr/local/bin  # Ajuste conforme necessário
           docker version
           docker info
           docker compose version 
           curl --version
-          '''
+        '''
       }
     }
     stage('Prune Docker data') {
@@ -29,5 +31,4 @@ pipeline {
       }
     }
   }
-  
 }
