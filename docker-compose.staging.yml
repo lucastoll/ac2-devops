@@ -15,7 +15,7 @@ services:
       SPRING_PROFILES_ACTIVE: staging
       DB_HOST: database
     ports:
-      - "8585:8585"
+      - "8787:8787"
     depends_on:
       - database
 

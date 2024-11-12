@@ -15,7 +15,7 @@ services:
       SPRING_PROFILES_ACTIVE: prod
       DB_HOST: database
     ports:
-      - "8585:8585"
+      - "8686:8686"
     depends_on:
       - database
 volumes:
