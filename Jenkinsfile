@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    PATH = "${env.PATH}:/usr/local/bin"  // Adiciona /usr/local/bin ao PATH
+    PATH = "${env.PATH}:/usr/local/bin"
   }
   stages {
     stage("verify tooling") {

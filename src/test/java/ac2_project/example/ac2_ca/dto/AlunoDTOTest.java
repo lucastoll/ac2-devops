@@ -1,4 +1,4 @@
-package ac2_projectexample.ac2_ca.dto;
+package ac2_project.example.ac2_ca.dto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ac2_project.example.ac2_ca.dto.AlunoDTO;

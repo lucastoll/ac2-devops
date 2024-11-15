@@ -29,7 +29,7 @@ public class AlunoService {
     public List<AlunoDTO> getAllAlunos() { 
         return alunoRepository.findAll().stream()
                 .map(aluno -> {
-                    AlunoDTO dto = new AlunoDTO();
+                	AlunoDTO dto = new AlunoDTO();
                     dto.setName(aluno.getUsername());
                     dto.setRa(aluno.getRa().getRa());
                     dto.setEmail(aluno.getEmail().getEmailAddress());
