@@ -17,14 +17,14 @@ public class AlunoDTOTest {
 
     @Test
     public void testGetSetName() {
-        String name = "Test Name";
+        String name = "Lucas";
         alunoDTO.setName(name);
         assertEquals(name, alunoDTO.getName());
     }
 
     @Test
     public void testGetSetEmail() {
-        String email = "test@example.com";
+        String email = "Lucastolotto@gmail.com";
         alunoDTO.setEmail(email);
         assertEquals(email, alunoDTO.getEmail());
     }

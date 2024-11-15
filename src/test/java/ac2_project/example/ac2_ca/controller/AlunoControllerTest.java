@@ -33,10 +33,10 @@ public class AlunoControllerTest {
     @Test
     public void testCreateUser () {
         AlunoDTO alunoDTO = new AlunoDTO();
-        alunoDTO.setName("testUser ");
+        alunoDTO.setName("Rafael ");
         Aluno aluno = new Aluno();
         aluno.setId(1L);
-        aluno.setUsername("testUser ");
+        aluno.setUsername("rafar ");
 
         when(alunoService.createAluno(alunoDTO)).thenReturn(aluno);
 
@@ -50,7 +50,7 @@ public class AlunoControllerTest {
     public void testGetAllAlunos() {
         List<AlunoDTO> alunos = new ArrayList<>();
         AlunoDTO alunoDTO = new AlunoDTO();
-        alunoDTO.setName("testUser ");
+        alunoDTO.setName("Pedro ");
         alunos.add(alunoDTO);
 
         when(alunoService.getAllAlunos()).thenReturn(alunos);
