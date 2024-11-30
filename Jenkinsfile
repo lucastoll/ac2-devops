@@ -26,7 +26,7 @@ pipeline {
     }
     stage('Run tests against the container') {
       steps {
-        sh 'curl http://localhost:8585'
+        sh 'curl http://localhost:8585/api/alunos'
       }
     }
   }
