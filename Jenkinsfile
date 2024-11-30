@@ -21,7 +21,14 @@ pipeline {
     }
     stage('Start container') {
       steps {
-        sh 'docker-compose -f docker-compose.prod.yml up -d --no-color --wait'
+        sh 'docker-compose -f docker-compose.prod.yml -p pipeline-prod up -d --no-color --wait'
+      }
+    }
+    stage('Wait for server to start') {
+      steps {
+        script {
+          sleep 15
+        }
       }
     }
     stage('Run tests against the container') {
